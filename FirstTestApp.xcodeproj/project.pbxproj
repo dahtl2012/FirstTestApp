@@ -22,6 +22,8 @@
 		B477C1D41590A33F00A5725E /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = B477C1D31590A33F00A5725E /* second.png */; };
 		B477C1D61590A33F00A5725E /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B477C1D51590A33F00A5725E /* second@2x.png */; };
 		B477C1E91590A69D00A5725E /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B477C1E81590A69D00A5725E /* ThirdViewController.m */; };
+		B477C1F51590AB8200A5725E /* third.png in Resources */ = {isa = PBXBuildFile; fileRef = B477C1F31590AB8200A5725E /* third.png */; };
+		B477C1F61590AB8200A5725E /* third@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B477C1F41590AB8200A5725E /* third@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		B477C1D51590A33F00A5725E /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		B477C1E71590A69D00A5725E /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		B477C1E81590A69D00A5725E /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		B477C1F31590AB8200A5725E /* third.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = third.png; sourceTree = "<group>"; };
+		B477C1F41590AB8200A5725E /* third@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "third@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,6 @@
 				B477C1C01590A33F00A5725E /* AppDelegate.h */,
 				B477C1C11590A33F00A5725E /* AppDelegate.m */,
 				B477C1C31590A33F00A5725E /* MainStoryboard_iPhone.storyboard */,
-				B477C1E71590A69D00A5725E /* ThirdViewController.h */,
-				B477C1E81590A69D00A5725E /* ThirdViewController.m */,
 				B477C1C61590A33F00A5725E /* MainStoryboard_iPad.storyboard */,
 				B477C1C91590A33F00A5725E /* FirstViewController.h */,
 				B477C1CA1590A33F00A5725E /* FirstViewController.m */,
@@ -107,6 +109,10 @@
 				B477C1D11590A33F00A5725E /* SecondViewController.m */,
 				B477C1D31590A33F00A5725E /* second.png */,
 				B477C1D51590A33F00A5725E /* second@2x.png */,
+				B477C1E71590A69D00A5725E /* ThirdViewController.h */,
+				B477C1E81590A69D00A5725E /* ThirdViewController.m */,
+				B477C1F31590AB8200A5725E /* third.png */,
+				B477C1F41590AB8200A5725E /* third@2x.png */,
 				B477C1B81590A33F00A5725E /* Supporting Files */,
 			);
 			path = FirstTestApp;
@@ -180,6 +186,8 @@
 				B477C1CF1590A33F00A5725E /* first@2x.png in Resources */,
 				B477C1D41590A33F00A5725E /* second.png in Resources */,
 				B477C1D61590A33F00A5725E /* second@2x.png in Resources */,
+				B477C1F51590AB8200A5725E /* third.png in Resources */,
+				B477C1F61590AB8200A5725E /* third@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
