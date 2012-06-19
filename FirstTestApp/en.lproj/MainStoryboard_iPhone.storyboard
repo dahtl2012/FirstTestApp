@@ -82,6 +82,7 @@
                     <connections>
                         <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
                         <segue destination="3" kind="relationship" relationship="viewControllers" id="27"/>
+                        <segue destination="18J-g7-3MF" kind="relationship" relationship="viewControllers" id="4Kw-Aa-XKK"/>
                     </connections>
                 </tabBarController>
             </objects>
