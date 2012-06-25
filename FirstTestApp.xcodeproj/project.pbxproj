@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		401D66111598538E007B2A02 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 401D66101598538E007B2A02 /* Icon.png */; };
 		B477C1B21590A33F00A5725E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B477C1B11590A33F00A5725E /* UIKit.framework */; };
 		B477C1B41590A33F00A5725E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B477C1B31590A33F00A5725E /* Foundation.framework */; };
 		B477C1B61590A33F00A5725E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B477C1B51590A33F00A5725E /* CoreGraphics.framework */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		401D66101598538E007B2A02 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		B477C1AD1590A33F00A5725E /* FirstTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B477C1B11590A33F00A5725E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B477C1B31590A33F00A5725E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,6 +72,7 @@
 		B477C1A21590A33E00A5725E = {
 			isa = PBXGroup;
 			children = (
+				401D66101598538E007B2A02 /* Icon.png */,
 				B477C1B71590A33F00A5725E /* FirstTestApp */,
 				B477C1B01590A33F00A5725E /* Frameworks */,
 				B477C1AE1590A33F00A5725E /* Products */,
@@ -189,6 +192,7 @@
 				B477C1D61590A33F00A5725E /* second@2x.png in Resources */,
 				B477C1F51590AB8200A5725E /* third.png in Resources */,
 				B477C1F61590AB8200A5725E /* third@2x.png in Resources */,
+				401D66111598538E007B2A02 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
