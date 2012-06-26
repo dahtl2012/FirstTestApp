@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddViewController.h"
 
-@interface TableViewController : UITableViewController <UIAlertViewDelegate>
+@interface TableViewController : UITableViewController <AddViewControllerDelegate> //id<UIAlertViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *data;
 
@@ -17,4 +18,8 @@
 
 - (void) loadData;
 - (void) saveData;
+
+-(void)controller:(AddViewController *)controller didFinishEnteringTask:(NSString *)task;
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 @end

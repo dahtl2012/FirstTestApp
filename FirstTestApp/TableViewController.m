@@ -77,7 +77,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell...
-    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     
     cell.textLabel.text = [self.data objectAtIndex:indexPath.row];
     
@@ -126,7 +125,7 @@
 */
 
 #pragma mark - Table view delegate
-
+/*
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"Geklickt auf %@", [self.data objectAtIndex:indexPath.row]);
@@ -143,7 +142,7 @@
     [alert show];
     
 }
-
+*/
 -(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     
     if (buttonIndex == 1) {
@@ -198,12 +197,12 @@
 }
 
 - (IBAction)addPressed:(id)sender {
-    
+    /*
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Neu" message:nil delegate:self cancelButtonTitle:@"Abbruch" otherButtonTitles:@"Ok", nil];
     
     alert.alertViewStyle = UIAlertViewStylePlainTextInput;
     
-    [alert show];
+    [alert show];*/
 }
 
 - (void) loadData {
@@ -214,6 +213,33 @@
 - (void) saveData {
     
     [self.data writeToFile:[NSString stringWithFormat:@"%@/Documents/data", NSHomeDirectory()] atomically:YES];
+}
+
+-(void)controller:(AddViewController *)controller didFinishEnteringTask:(NSString *)task {
+    NSLog(@"controller didFinishEnteringTask");
+    [self.data addObject:task];
+    [self.tableView reloadData];
+    [self saveData];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"Test");
+    if ([[segue identifier] isEqualToString:@"showAdd"]) {
+        NSLog(@"Test2");
+        id dest = [segue destinationViewController];
+        if ([dest isKindOfClass:[UINavigationController class]]) {
+            UINavigationController* nav = dest;
+            dest = nav.topViewController;
+        }
+        [dest setDelegate:self];
+    }
+    NSLog(@"Test");
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+        NSLog(@"Test3");
+        //AddViewController *addview = [AddViewController alloc];
+        //addview.task = @"Test";
+    }
+    
 }
 
 @end
