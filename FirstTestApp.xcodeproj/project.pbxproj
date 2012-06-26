@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		401D66111598538E007B2A02 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 401D66101598538E007B2A02 /* Icon.png */; };
+		B4205DF51599A4D2009FDCFB /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4205DF41599A4D2009FDCFB /* TableViewController.m */; };
 		B477C1B21590A33F00A5725E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B477C1B11590A33F00A5725E /* UIKit.framework */; };
 		B477C1B41590A33F00A5725E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B477C1B31590A33F00A5725E /* Foundation.framework */; };
 		B477C1B61590A33F00A5725E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B477C1B51590A33F00A5725E /* CoreGraphics.framework */; };
@@ -29,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		401D66101598538E007B2A02 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B4205DF31599A4D2009FDCFB /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B4205DF41599A4D2009FDCFB /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		B477C1AD1590A33F00A5725E /* FirstTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B477C1B11590A33F00A5725E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B477C1B31590A33F00A5725E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -116,6 +119,8 @@
 				B477C1E81590A69D00A5725E /* ThirdViewController.m */,
 				B477C1F31590AB8200A5725E /* third.png */,
 				B477C1F41590AB8200A5725E /* third@2x.png */,
+				B4205DF31599A4D2009FDCFB /* TableViewController.h */,
+				B4205DF41599A4D2009FDCFB /* TableViewController.m */,
 				B477C1B81590A33F00A5725E /* Supporting Files */,
 			);
 			path = FirstTestApp;
@@ -224,6 +229,7 @@
 				B477C1CB1590A33F00A5725E /* FirstViewController.m in Sources */,
 				B477C1D21590A33F00A5725E /* SecondViewController.m in Sources */,
 				B477C1E91590A69D00A5725E /* ThirdViewController.m in Sources */,
+				B4205DF51599A4D2009FDCFB /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

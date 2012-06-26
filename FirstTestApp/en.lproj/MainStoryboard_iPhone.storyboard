@@ -355,10 +355,68 @@
                         <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
                         <segue destination="3" kind="relationship" relationship="viewControllers" id="27"/>
                         <segue destination="18J-g7-3MF" kind="relationship" relationship="viewControllers" id="bEf-K7-Foi"/>
+                        <segue destination="mHZ-f3-P7m" kind="relationship" relationship="viewControllers" id="sXJ-Ov-ZBh"/>
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="-52" y="498"/>
+            <point key="canvasLocation" x="-78" y="498"/>
+        </scene>
+        <!--Navigation Controller - ToDO Liste-->
+        <scene sceneID="EnC-hX-n7C">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KVU-4V-KjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="mHZ-f3-P7m" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ToDO Liste" image="second" id="uU6-w5-CLW"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="lYb-hV-lID">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mzl-Oz-jUh" kind="relationship" relationship="rootViewController" id="dW2-uE-fSa"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="653" y="1710"/>
+        </scene>
+        <!--Table View Controller - ToDo-->
+        <scene sceneID="13Y-oN-xII">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PX5-vj-QKQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="mzl-Oz-jUh" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="xE4-vC-yOe">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="q7v-cH-V2j">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mzl-Oz-jUh" id="J7q-wn-my0"/>
+                            <outlet property="delegate" destination="mzl-Oz-jUh" id="jb9-P9-72r"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="ToDo" id="O4S-J0-mxi">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="Ycz-sn-fAB">
+                            <connections>
+                                <action selector="editPressed:" destination="mzl-Oz-jUh" id="sib-DL-XJb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Emy-77-oJR">
+                            <connections>
+                                <action selector="addPressed:" destination="mzl-Oz-jUh" id="Jja-eO-Ju6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1083" y="1710"/>
         </scene>
     </scenes>
     <resources>
@@ -372,6 +430,13 @@
         </class>
         <class className="SecondViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
+        </class>
+        <class className="TableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addPressed:"/>
+                <relationship kind="action" name="editPressed:"/>
+            </relationships>
         </class>
         <class className="ThirdViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdViewController.h"/>
