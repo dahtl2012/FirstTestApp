@@ -27,6 +27,8 @@
 		B477C1E91590A69D00A5725E /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B477C1E81590A69D00A5725E /* ThirdViewController.m */; };
 		B477C1F51590AB8200A5725E /* third.png in Resources */ = {isa = PBXBuildFile; fileRef = B477C1F31590AB8200A5725E /* third.png */; };
 		B477C1F61590AB8200A5725E /* third@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B477C1F41590AB8200A5725E /* third@2x.png */; };
+		B48E60DB15B718F8003BC63E /* Twitter.m in Sources */ = {isa = PBXBuildFile; fileRef = B48E60DA15B718F8003BC63E /* Twitter.m */; };
+		B48E60E215B71CB5003BC63E /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48E60E115B71CB5003BC63E /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,9 @@
 		B477C1E81590A69D00A5725E /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		B477C1F31590AB8200A5725E /* third.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = third.png; sourceTree = "<group>"; };
 		B477C1F41590AB8200A5725E /* third@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "third@2x.png"; sourceTree = "<group>"; };
+		B48E60D915B718F8003BC63E /* Twitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Twitter.h; sourceTree = "<group>"; };
+		B48E60DA15B718F8003BC63E /* Twitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Twitter.m; sourceTree = "<group>"; };
+		B48E60E115B71CB5003BC63E /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B48E60E215B71CB5003BC63E /* Twitter.framework in Frameworks */,
 				B477C1B21590A33F00A5725E /* UIKit.framework in Frameworks */,
 				B477C1B41590A33F00A5725E /* Foundation.framework in Frameworks */,
 				B477C1B61590A33F00A5725E /* CoreGraphics.framework in Frameworks */,
@@ -96,6 +102,7 @@
 		B477C1B01590A33F00A5725E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B48E60E115B71CB5003BC63E /* Twitter.framework */,
 				B477C1B11590A33F00A5725E /* UIKit.framework */,
 				B477C1B31590A33F00A5725E /* Foundation.framework */,
 				B477C1B51590A33F00A5725E /* CoreGraphics.framework */,
@@ -126,6 +133,8 @@
 				B4205DF41599A4D2009FDCFB /* TableViewController.m */,
 				B4205DF61599ACDC009FDCFB /* AddViewController.h */,
 				B4205DF71599ACDC009FDCFB /* AddViewController.m */,
+				B48E60D915B718F8003BC63E /* Twitter.h */,
+				B48E60DA15B718F8003BC63E /* Twitter.m */,
 				B477C1B81590A33F00A5725E /* Supporting Files */,
 			);
 			path = FirstTestApp;
@@ -236,6 +245,7 @@
 				B477C1E91590A69D00A5725E /* ThirdViewController.m in Sources */,
 				B4205DF51599A4D2009FDCFB /* TableViewController.m in Sources */,
 				B4205DF81599ACDC009FDCFB /* AddViewController.m in Sources */,
+				B48E60DB15B718F8003BC63E /* Twitter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

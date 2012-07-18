@@ -362,7 +362,7 @@
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="-620" y="498"/>
+            <point key="canvasLocation" x="-440" y="498"/>
         </scene>
         <!--Navigation Controller - ToDO Liste-->
         <scene sceneID="z0o-G6-7Dl">
