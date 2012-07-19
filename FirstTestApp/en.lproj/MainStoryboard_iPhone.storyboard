@@ -398,7 +398,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="140" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Fjx-WT-AdE">
-                                <rect key="frame" x="20" y="147" width="42" height="21"/>
+                                <rect key="frame" x="183" y="118" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -420,13 +420,54 @@
                                     <action selector="down:" destination="Deu-oc-4D1" eventType="touchUpInside" id="JJw-Ts-mF9"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="SdY-qt-nre">
+                                <rect key="frame" x="20" y="147" width="280" height="66"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="tweets" textLabel="3Yk-Yk-YJN" detailTextLabel="FYB-vs-IWe" style="IBUITableViewCellStyleSubtitle" id="DhK-Ko-Nn7">
+                                        <rect key="frame" x="0.0" y="22" width="280" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Yk-Yk-YJN">
+                                                    <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FYB-vs-IWe">
+                                                    <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Deu-oc-4D1" id="vfo-J3-6LQ"/>
+                                    <outlet property="delegate" destination="Deu-oc-4D1" id="6iT-nC-0aP"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="new_twitter_bird_vector_by_eagl0r-d2yth6g.png" id="YUP-Ec-u8b">
+                                <rect key="frame" x="40" y="256" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Twitter" image="first" id="UkB-q4-zop"/>
                     <connections>
                         <outlet property="count" destination="Fjx-WT-AdE" id="Mad-FK-1UB"/>
                         <outlet property="keyDown" destination="mew-Xa-90s" id="yZt-E1-iFk"/>
+                        <outlet property="tableView" destination="SdY-qt-nre" id="TmX-7r-tcJ"/>
                         <outlet property="textView" destination="2tB-Eo-5MC" id="b12-SF-YYA"/>
                     </connections>
                 </viewController>
@@ -653,6 +694,7 @@
     </scenes>
     <resources>
         <image name="first" width="16" height="16"/>
+        <image name="new_twitter_bird_vector_by_eagl0r-d2yth6g.png" width="1920" height="1080"/>
         <image name="second" width="16" height="16"/>
         <image name="third.png" width="30" height="30"/>
     </resources>
@@ -694,6 +736,7 @@
                 <relationship kind="action" name="tweet:"/>
                 <relationship kind="outlet" name="count" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="keyDown" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
             </relationships>
         </class>

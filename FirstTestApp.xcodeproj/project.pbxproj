@@ -29,6 +29,8 @@
 		B477C1F61590AB8200A5725E /* third@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B477C1F41590AB8200A5725E /* third@2x.png */; };
 		B48E60DB15B718F8003BC63E /* Twitter.m in Sources */ = {isa = PBXBuildFile; fileRef = B48E60DA15B718F8003BC63E /* Twitter.m */; };
 		B48E60E215B71CB5003BC63E /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48E60E115B71CB5003BC63E /* Twitter.framework */; };
+		B4D352A615B898C200513E91 /* new_twitter_bird_vector_by_eagl0r-d2yth6g.png in Resources */ = {isa = PBXBuildFile; fileRef = B4D352A515B898C200513E91 /* new_twitter_bird_vector_by_eagl0r-d2yth6g.png */; };
+		B4D352A915B89BBA00513E91 /* tweet_button.png in Resources */ = {isa = PBXBuildFile; fileRef = B4D352A815B89BBA00513E91 /* tweet_button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		B48E60D915B718F8003BC63E /* Twitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Twitter.h; sourceTree = "<group>"; };
 		B48E60DA15B718F8003BC63E /* Twitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Twitter.m; sourceTree = "<group>"; };
 		B48E60E115B71CB5003BC63E /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		B4D352A515B898C200513E91 /* new_twitter_bird_vector_by_eagl0r-d2yth6g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new_twitter_bird_vector_by_eagl0r-d2yth6g.png"; sourceTree = "<group>"; };
+		B4D352A815B89BBA00513E91 /* tweet_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tweet_button.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 				B4205DF71599ACDC009FDCFB /* AddViewController.m */,
 				B48E60D915B718F8003BC63E /* Twitter.h */,
 				B48E60DA15B718F8003BC63E /* Twitter.m */,
+				B4D352A515B898C200513E91 /* new_twitter_bird_vector_by_eagl0r-d2yth6g.png */,
+				B4D352A815B89BBA00513E91 /* tweet_button.png */,
 				B477C1B81590A33F00A5725E /* Supporting Files */,
 			);
 			path = FirstTestApp;
@@ -212,6 +218,8 @@
 				B477C1F51590AB8200A5725E /* third.png in Resources */,
 				B477C1F61590AB8200A5725E /* third@2x.png in Resources */,
 				401D66111598538E007B2A02 /* Icon.png in Resources */,
+				B4D352A615B898C200513E91 /* new_twitter_bird_vector_by_eagl0r-d2yth6g.png in Resources */,
+				B4D352A915B89BBA00513E91 /* tweet_button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
