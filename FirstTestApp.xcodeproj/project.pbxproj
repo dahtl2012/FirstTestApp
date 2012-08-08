@@ -10,6 +10,8 @@
 		401D66111598538E007B2A02 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 401D66101598538E007B2A02 /* Icon.png */; };
 		B4205DF51599A4D2009FDCFB /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4205DF41599A4D2009FDCFB /* TableViewController.m */; };
 		B4205DF81599ACDC009FDCFB /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4205DF71599ACDC009FDCFB /* AddViewController.m */; };
+		B440574C15D2F3DB004157C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B440574B15D2F3DB004157C2 /* CoreData.framework */; };
+		B440575015D2F4B9004157C2 /* data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B440574E15D2F4B9004157C2 /* data.xcdatamodeld */; };
 		B477C1B21590A33F00A5725E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B477C1B11590A33F00A5725E /* UIKit.framework */; };
 		B477C1B41590A33F00A5725E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B477C1B31590A33F00A5725E /* Foundation.framework */; };
 		B477C1B61590A33F00A5725E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B477C1B51590A33F00A5725E /* CoreGraphics.framework */; };
@@ -34,11 +36,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		401D66101598538E007B2A02 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		401D66101598538E007B2A02 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		B4205DF31599A4D2009FDCFB /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		B4205DF41599A4D2009FDCFB /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		B4205DF61599ACDC009FDCFB /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
 		B4205DF71599ACDC009FDCFB /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		B440574B15D2F3DB004157C2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B440574F15D2F4B9004157C2 /* data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = data.xcdatamodel; sourceTree = "<group>"; };
 		B477C1AD1590A33F00A5725E /* FirstTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B477C1B11590A33F00A5725E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B477C1B31590A33F00A5725E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B440574C15D2F3DB004157C2 /* CoreData.framework in Frameworks */,
 				B48E60E215B71CB5003BC63E /* Twitter.framework in Frameworks */,
 				B477C1B21590A33F00A5725E /* UIKit.framework in Frameworks */,
 				B477C1B41590A33F00A5725E /* Foundation.framework in Frameworks */,
@@ -88,7 +93,6 @@
 		B477C1A21590A33E00A5725E = {
 			isa = PBXGroup;
 			children = (
-				401D66101598538E007B2A02 /* Icon.png */,
 				B477C1B71590A33F00A5725E /* FirstTestApp */,
 				B477C1B01590A33F00A5725E /* Frameworks */,
 				B477C1AE1590A33F00A5725E /* Products */,
@@ -106,6 +110,7 @@
 		B477C1B01590A33F00A5725E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B440574B15D2F3DB004157C2 /* CoreData.framework */,
 				B48E60E115B71CB5003BC63E /* Twitter.framework */,
 				B477C1B11590A33F00A5725E /* UIKit.framework */,
 				B477C1B31590A33F00A5725E /* Foundation.framework */,
@@ -117,6 +122,7 @@
 		B477C1B71590A33F00A5725E /* FirstTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				401D66101598538E007B2A02 /* Icon.png */,
 				B477C1C01590A33F00A5725E /* AppDelegate.h */,
 				B477C1C11590A33F00A5725E /* AppDelegate.m */,
 				B477C1C31590A33F00A5725E /* MainStoryboard_iPhone.storyboard */,
@@ -141,6 +147,7 @@
 				B48E60DA15B718F8003BC63E /* Twitter.m */,
 				B4D352A515B898C200513E91 /* new_twitter_bird_vector_by_eagl0r-d2yth6g.png */,
 				B4D352A815B89BBA00513E91 /* tweet_button.png */,
+				B440574E15D2F4B9004157C2 /* data.xcdatamodeld */,
 				B477C1B81590A33F00A5725E /* Supporting Files */,
 			);
 			path = FirstTestApp;
@@ -254,6 +261,7 @@
 				B4205DF51599A4D2009FDCFB /* TableViewController.m in Sources */,
 				B4205DF81599ACDC009FDCFB /* AddViewController.m in Sources */,
 				B48E60DB15B718F8003BC63E /* Twitter.m in Sources */,
+				B440575015D2F4B9004157C2 /* data.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +386,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B440574E15D2F4B9004157C2 /* data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B440574F15D2F4B9004157C2 /* data.xcdatamodel */,
+			);
+			currentVersion = B440574F15D2F4B9004157C2 /* data.xcdatamodel */;
+			path = data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B477C1A41590A33E00A5725E /* Project object */;
 }
