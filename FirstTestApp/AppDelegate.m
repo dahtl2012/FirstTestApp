@@ -133,7 +133,7 @@
 {
     // Override point for customization after application launch.
     
-    // Test
+    /* Test
     NSManagedObjectContext *context = [self managedObjectContext];
     NSManagedObject *model = [NSEntityDescription
                               insertNewObjectForEntityForName:@"Test"
@@ -158,7 +158,7 @@
     }
     
     // End test
-    
+    */
     return YES;
 }
 							

@@ -12,6 +12,7 @@
 		B4205DF81599ACDC009FDCFB /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4205DF71599ACDC009FDCFB /* AddViewController.m */; };
 		B440574C15D2F3DB004157C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B440574B15D2F3DB004157C2 /* CoreData.framework */; };
 		B440575015D2F4B9004157C2 /* data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B440574E15D2F4B9004157C2 /* data.xcdatamodeld */; };
+		B440575415D2FF7A004157C2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B440575315D2FF7A004157C2 /* RootViewController.m */; };
 		B477C1B21590A33F00A5725E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B477C1B11590A33F00A5725E /* UIKit.framework */; };
 		B477C1B41590A33F00A5725E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B477C1B31590A33F00A5725E /* Foundation.framework */; };
 		B477C1B61590A33F00A5725E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B477C1B51590A33F00A5725E /* CoreGraphics.framework */; };
@@ -43,6 +44,8 @@
 		B4205DF71599ACDC009FDCFB /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
 		B440574B15D2F3DB004157C2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B440574F15D2F4B9004157C2 /* data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = data.xcdatamodel; sourceTree = "<group>"; };
+		B440575215D2FF7A004157C2 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		B440575315D2FF7A004157C2 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		B477C1AD1590A33F00A5725E /* FirstTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B477C1B11590A33F00A5725E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B477C1B31590A33F00A5725E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -90,6 +93,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B440575115D2FF35004157C2 /* CoreDataTest */ = {
+			isa = PBXGroup;
+			children = (
+				B440574E15D2F4B9004157C2 /* data.xcdatamodeld */,
+				B440575215D2FF7A004157C2 /* RootViewController.h */,
+				B440575315D2FF7A004157C2 /* RootViewController.m */,
+			);
+			name = CoreDataTest;
+			sourceTree = "<group>";
+		};
 		B477C1A21590A33E00A5725E = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +135,7 @@
 		B477C1B71590A33F00A5725E /* FirstTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				B440575115D2FF35004157C2 /* CoreDataTest */,
 				401D66101598538E007B2A02 /* Icon.png */,
 				B477C1C01590A33F00A5725E /* AppDelegate.h */,
 				B477C1C11590A33F00A5725E /* AppDelegate.m */,
@@ -147,7 +161,6 @@
 				B48E60DA15B718F8003BC63E /* Twitter.m */,
 				B4D352A515B898C200513E91 /* new_twitter_bird_vector_by_eagl0r-d2yth6g.png */,
 				B4D352A815B89BBA00513E91 /* tweet_button.png */,
-				B440574E15D2F4B9004157C2 /* data.xcdatamodeld */,
 				B477C1B81590A33F00A5725E /* Supporting Files */,
 			);
 			path = FirstTestApp;
@@ -262,6 +275,7 @@
 				B4205DF81599ACDC009FDCFB /* AddViewController.m in Sources */,
 				B48E60DB15B718F8003BC63E /* Twitter.m in Sources */,
 				B440575015D2F4B9004157C2 /* data.xcdatamodeld in Sources */,
+				B440575415D2FF7A004157C2 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
