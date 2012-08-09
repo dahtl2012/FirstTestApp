@@ -14,6 +14,35 @@
 
 @implementation RootViewController
 
+@synthesize eventsArray;
+@synthesize managedObjectContext;
+@synthesize addButton;
+@synthesize locationManager;
+
+- (CLLocationManager *)locationManager {
+    
+    if (locationManager != nil) {
+        return locationManager;
+    }
+    
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+    locationManager.delegate = self;
+    
+    return locationManager;
+}
+
+- (void)locationManager:(CLLocationManager *)manager
+    didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation {
+    addButton.enabled = YES;
+}
+
+- (void)locationManager:(CLLocationManager *)manager
+       didFailWithError:(NSError *)error {
+    addButton.enabled = NO;
+}
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -23,15 +52,23 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
+    
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    // Set the title.
+    self.title = @"Locations";
+    
+    // Set up the buttons.
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    
+    addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                              target:self action:@selector(addEvent)];
+    addButton.enabled = NO;
+    self.navigationItem.rightBarButtonItem = addButton;
+    
+    // Start the location manager.
+    [[self locationManager] startUpdatingLocation];
 }
 
 - (void)viewDidUnload
@@ -39,6 +76,9 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    self.eventsArray = nil;
+    self.locationManager = nil;
+    self.addButton = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

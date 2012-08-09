@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
 
 @implementation AppDelegate
 
@@ -15,6 +16,8 @@
 @synthesize managedObjectContext=__managedObjectContext;
 @synthesize managedObjectModel=__managedObjectModel;
 @synthesize persistentStoreCoordinator=__persistentStoreCoordinator;
+
+@synthesize navigationController;
 
 - (void)saveContext
 {
@@ -129,36 +132,26 @@
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    /* Test
+    RootViewController *rootViewController = [[RootViewController alloc]
+                                              initWithStyle:UITableViewStylePlain];
+    
     NSManagedObjectContext *context = [self managedObjectContext];
-    NSManagedObject *model = [NSEntityDescription
-                              insertNewObjectForEntityForName:@"Test"
-                              inManagedObjectContext:context];
-    [model setValue:@"Any old value" forKey:@"test"];
-    
-    NSError *error;
-    if (![context save:&error]) {
-        NSLog(@"Couldn't save: %@", [error localizedDescription]);
+    if (!context) {
+        // Handle the error.
     }
+    // Pass the managed object context to the view controller.
+    rootViewController.managedObjectContext = context;
     
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription
-                                   entityForName:@"Test" inManagedObjectContext:context];
+    UINavigationController *aNavigationController = [[UINavigationController alloc]
+                                                     initWithRootViewController:rootViewController];
+    self.navigationController = aNavigationController;
     
-    [fetchRequest setEntity:entity];
+    [self.window addSubview:[navigationController view]];
+    [self.window makeKeyAndVisible];
     
-    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
     
-    for (NSManagedObject *model in fetchedObjects) {
-        NSLog(@"Value: %@", [model valueForKey:@"title"]);
-    }
-    
-    // End test
-    */
     return YES;
 }
 							
