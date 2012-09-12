@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		401D66111598538E007B2A02 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 401D66101598538E007B2A02 /* Icon.png */; };
+		40B2CE6616011BF400B3552A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B2CE6516011BF400B3552A /* CoreMotion.framework */; };
 		B4205DF51599A4D2009FDCFB /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4205DF41599A4D2009FDCFB /* TableViewController.m */; };
 		B4205DF81599ACDC009FDCFB /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4205DF71599ACDC009FDCFB /* AddViewController.m */; };
 		B440574C15D2F3DB004157C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B440574B15D2F3DB004157C2 /* CoreData.framework */; };
