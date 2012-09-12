@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		401D66111598538E007B2A02 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 401D66101598538E007B2A02 /* Icon.png */; };
+		40B2CE6616011BF400B3552A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B2CE6516011BF400B3552A /* CoreMotion.framework */; };
 		B4205DF51599A4D2009FDCFB /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4205DF41599A4D2009FDCFB /* TableViewController.m */; };
 		B4205DF81599ACDC009FDCFB /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4205DF71599ACDC009FDCFB /* AddViewController.m */; };
 		B477C1B21590A33F00A5725E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B477C1B11590A33F00A5725E /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		401D66101598538E007B2A02 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		40B2CE6516011BF400B3552A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		B4205DF31599A4D2009FDCFB /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		B4205DF41599A4D2009FDCFB /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		B4205DF61599ACDC009FDCFB /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B2CE6616011BF400B3552A /* CoreMotion.framework in Frameworks */,
 				B48E60E215B71CB5003BC63E /* Twitter.framework in Frameworks */,
 				B477C1B21590A33F00A5725E /* UIKit.framework in Frameworks */,
 				B477C1B41590A33F00A5725E /* Foundation.framework in Frameworks */,
@@ -106,6 +109,7 @@
 		B477C1B01590A33F00A5725E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				40B2CE6516011BF400B3552A /* CoreMotion.framework */,
 				B48E60E115B71CB5003BC63E /* Twitter.framework */,
 				B477C1B11590A33F00A5725E /* UIKit.framework */,
 				B477C1B31590A33F00A5725E /* Foundation.framework */,
