@@ -43,6 +43,7 @@
             
             self.angel.text = [NSString stringWithFormat:@"%03.2f", grad];
             CGAffineTransform rotation = CGAffineTransformMakeRotation(rad);
+            self.level.transform = rotation;
 
         }];
     } else {
