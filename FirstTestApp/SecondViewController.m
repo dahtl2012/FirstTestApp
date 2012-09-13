@@ -13,6 +13,7 @@
 @end
 
 @implementation SecondViewController
+@synthesize onOffButton;
 
 - (void)viewDidLoad
 {
@@ -22,8 +23,14 @@
 
 - (void)viewDidUnload
 {
+    [self setOnOffButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -32,6 +39,46 @@
         return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     } else {
         return YES;
+    }
+}
+
+- (IBAction)onOffPressed:(id)sender {
+    
+    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    
+    if (device.torchMode == AVCaptureTorchModeOff)
+    {
+        // Create an AV session
+        AVCaptureSession *session = [[AVCaptureSession alloc] init];
+        
+        // Create device input and add to current session
+        AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:device error: nil];
+        [session addInput:input];
+        
+        // Create video output and add to current session
+        AVCaptureVideoDataOutput *output = [[AVCaptureVideoDataOutput alloc] init];
+        [session addOutput:output];
+        
+        // Start session configuration
+        [session beginConfiguration];
+        [device lockForConfiguration:nil];
+        
+        // Set torch to on
+        [device setTorchMode:AVCaptureTorchModeOn];
+        
+        [device unlockForConfiguration];
+        [session commitConfiguration];
+        
+        // Start the session
+        [session startRunning];
+        
+        // Keep the session around
+        //[self setAVSession:session];
+        
+    }
+    else
+    {
+        //[AVSession stopRunning];
     }
 }
 

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface SecondViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *onOffButton;
 
+- (IBAction)onOffPressed:(id)sender;
 @end
