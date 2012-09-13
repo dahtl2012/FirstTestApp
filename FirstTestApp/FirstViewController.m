@@ -40,6 +40,7 @@
             double rad = atan2(self.x, self.y) + M_PI;
             double grad = rad * 180 / M_PI;
             
+            
             self.angel.text = [NSString stringWithFormat:@"%03.2f", grad];
             CGAffineTransform rotation = CGAffineTransformMakeRotation(rad);
 
