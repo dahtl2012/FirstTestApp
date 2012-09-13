@@ -350,7 +350,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="w6u-5J-Su2">
-                                <rect key="frame" x="20" y="20" width="728" height="59"/>
+                                <rect key="frame" x="172" y="103" width="424" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
@@ -368,7 +368,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="653" y="1643"/>
+            <point key="canvasLocation" x="653" y="1607"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="G46-2L-zpV">
@@ -749,14 +749,12 @@
             <relationships>
                 <relationship kind="action" name="onOffPressed:"/>
                 <relationship kind="outlet" name="onOffButton" candidateClass="UIView"/>
-                <relationship kind="outlet" name="vImagePreview" candidateClass="UIView"/>
             </relationships>
         </class>
         <class className="TableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TableViewController.h"/>
             <relationships>
                 <relationship kind="action" name="addPressed:"/>
-                <relationship kind="action" name="donePressed:"/>
                 <relationship kind="action" name="editPressed:"/>
             </relationships>
         </class>
